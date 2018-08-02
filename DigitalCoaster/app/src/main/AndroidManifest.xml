@@ -2,13 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.masavi.digitalcoaster">
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true"/>
-
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -23,8 +18,10 @@
         android:name="com.google.android.gms.vision.DEPENDENCIES"
         android:value="barcode"/>
 
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="Lector de código de barras">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

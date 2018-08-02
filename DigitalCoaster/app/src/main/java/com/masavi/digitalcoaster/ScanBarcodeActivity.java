@@ -37,7 +37,7 @@ public class ScanBarcodeActivity extends Activity {
         BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(this).build();
         final CameraSource cameraSource = new CameraSource.Builder(this, barcodeDetector)
                 .setAutoFocusEnabled(true)
-                .setRequestedPreviewSize(1600, 1024)
+                .setRequestedPreviewSize(1280, 800)
                 .build();
 
         cameraPreview.getHolder().addCallback(new SurfaceHolder.Callback() {

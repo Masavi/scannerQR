@@ -28,4 +28,6 @@ dependencies {
 
     // Google Mobile Vision
     implementation 'com.google.android.gms:play-services-vision:11.4.0'
+    // HTTP Client
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
 }
